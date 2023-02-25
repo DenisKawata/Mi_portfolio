@@ -142,18 +142,6 @@ html {
     display: flex;
 }
 
-#sobremi .contenedor-foto {
-    max-width: 400px;
-    margin-right: 80px;
-}
-
-#sobremi .contenedor-foto img {
-    padding: 20px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #f3f3f3;
-}
-
 #sobremi .sobremi {
     margin: 0 40px;
 }
@@ -168,6 +156,7 @@ html {
 }
 
 #sobremi .sobremi h2 {
+    text-align: center;
     font-size:  34px;
     font-weight: bold;
     margin: 20px 0;
@@ -179,6 +168,7 @@ html {
 }
 
 #sobremi .sobremi h3 {
+    text-align: center;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -187,103 +177,32 @@ html {
 }
 
 #sobremi .sobremi p {
+    text-align: center;
     font-size: 14px;
     line-height: 25px;
     color: #565656;
     margin-bottom: 12px;
 }
 
-#sobremi .sobremi a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    border-radius: 30px;
-    padding: 10px 20px;
-    border: 1px solid #000;
-    margin-top: 30px;
-    transition: .5s;
-}
+#sobremi .sobremi ul {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
 
-#sobremi .sobremi a:hover {
-    background-color: #ff5080;
-    color: #fff;
-}
-
-/* SECCION S E R V I C I O S*/
-
-#servicios {
-    padding: 100px 15px;
-    text-align: center;
-    background-color: #f3f3f3;
-}
-
-#servicios .titulo-seccion {
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px; 
-}
-
-#servicios .fila {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 30px auto;
-}
-
-#servicios .fila .servicio {
-    max-width: 350px;
-    background-color: #fff;
-    padding: 30px;
-    margin: 0 5px;
-    border-radius: 5px;
-    transition: .5s;
-}
-
-#servicios .fila .servicio:hover {
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-}
-
-#servicios .fila .servicio h4 {
-    font-size: 22px;
-    margin-bottom: 25px;
-}
-
-#servicios .fila .servicio .icono {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #d3d3d3;
-    padding: 20px;
-    margin-bottom: 25px;
-}
-
-#servicios .fila .servicio hr {
-    width: 30%;
-    margin: auto;
-    color: #000;
-    margin-bottom: 25px;
-}
-
-#servicios .fila .servicio ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-#servicios .fila .servicio p {
+#sobremi .sobremi li {
+    text-align: left;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
 }
 
 /* SECCION HABILIDADES */
 
 .contenedor-skills {
-    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("https://www.techies.es/wp-content/uploads/2021/03/desarrollo-web.jpg");
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("https://i.pinimg.com/736x/ad/3f/35/ad3f35bef7dc81870c3e86c23dd2f805--windows-wallpaper-hd-wallpaper.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,158 +212,13 @@ html {
 }
 
 .contenedor-skills .skill {
-    max-width: 600px;
-    margin: 30px auto;
-}
-
-.contenedor-skills .skill .info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor-skills .skill .lista {
-    display: inline-block;
-    margin-right: 20px;
-    height: 10px;
-    width: 10px;
-    background-color: #fff;
-}
-
-.contenedor-skills .skill .barra {
-    background-color: #919191;
-    width: 100%;
-    height: 6px;
-    margin: 10px 0;
-}
-
-
-/* Este estilo se aplicara luego mediante javascript para lograr la animacion de la barra */
-
-.contenedor-skills .skill .barra .barra-progreso1 {
-    background-color: #fff;
-    width: 95%;
-    height: 6px;
-    animation: progreso1 2% forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso2 {
-    background-color: #fff;
-    width: 90%;
-    height: 6px;
-    animation: progreso2 2% forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso3 {
-    background-color: #fff;
-    width: 90%;
-    height: 6px;
-    animation: progreso3 2% forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso4 {
-    background-color: #fff;
-    width: 85%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-
-/* Creamos las animaciones de las barras */
-
-@keyframes progreso1 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 95%;
-    }
-}
-
-@keyframes progreso2 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes progreso3 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes progreso4 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 85%;
-    }
-}
-
-/* SECCION PORTFOLIO */
-
-#portfolio {
-    max-width: 1100px;
-    padding: 100px 0;
-    margin: auto;
-}
-
-#portfolio .titulo-seccion {
-    text-align: center;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #111135;
-    text-decoration: underline;
-    text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px; 
-}
-
-#portfolio .fila {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
-}
-
-#portfolio .fila .proyecto {
-    max-width: 450px;
-    border: 1px solid #000;
-    margin: 0 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-#portfolio .fila .proyecto img {
-    width: 100%;
-    height: 100%;
-    filter: grayscale(1);
-    object-fit: cover;
-    transition: .5s;
-}
-
-#portfolio .fila .proyecto:hover img {
-    filter: grayscale(0);
-}
-
-#portfolio .fila .proyecto .info {
-    position: absolute;
-    left: 0;
-    background-color: rgba(0, 0, 0, .8);
-    color: #ff5080;
-    width: 100%;
-    padding: 10px;
-    opacity: 0;
-    bottom: -40px;
-    transition: .5s;
-}
-
-#portfolio .fila .proyecto:hover .info {
-    opacity: 1;
-    bottom: 0;
+    display: grid;
+    grid-gap: 30px;
+    height: 70px;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(7, 150px);
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* SECCION CONTACTO */
@@ -572,27 +346,6 @@ footer a {
     #sobremi .sobremi h2 {
         font-size: 25px;
         text-align: center;
-    }
-    #servicios {
-        padding: 50px 15px;
-    }
-    #servicios .fila {
-        display: block;
-    }
-    #servicios .fila .servicio {
-        margin: 10px auto;
-    }
-    .contenedor-skills {
-        padding: 50px 20px;
-    }
-    #portfolio {
-        padding: 50px 0;
-    }
-    #portfolio .fila {
-        display: block;
-    }
-    #portfolio .fila .proyecto {
-        margin: 10px auto;
     }
     #contacto {
         padding: 50px 15px;
